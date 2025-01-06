@@ -294,7 +294,7 @@ A variety of things can cause an ingestion run to fail. Common reasons for failu
    you are trying to reach. 
    
 4. **Authentication**: If you've enabled [Metadata Service Authentication](authentication/introducing-metadata-service-authentication.md), you'll need to provide a Personal Access Token 
-    in your Recipe Configuration. To so this, set the 'token' field of the sink configuration to contain a Personal Access Token:
+    in your Recipe Configuration. To do this, set the 'token' field of the sink configuration to contain a Personal Access Token:
    
 <p align="center">
   <img width="70%"  src="https://raw.githubusercontent.com/datahub-project/static-assets/main/imgs/ingestion-with-token.png"/>
@@ -330,7 +330,7 @@ If you see 'N/A', and the ingestion run state never changes to 'Running', this m
 that your executor (`datahub-actions`) container is down. 
 
 This container is responsible for executing requests to run ingestion when they come in, either
-on demand on a particular schedule. You can verify the health of the container using `docker ps`. Moreover, you can inspect the container logs using by finding the container id
+on demand or according to a specific schedule. You can verify the health of the container using `docker ps`. Moreover, you can inspect the container logs by finding the container id
 for the `datahub-actions` container and running `docker logs <container-id>`.
 
 ### When should I NOT use UI Ingestion?
